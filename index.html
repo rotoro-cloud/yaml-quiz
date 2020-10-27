@@ -34,11 +34,11 @@
                         <p ng-bind-html="current_question.subText"></p>
 
                         <div class="card-action">
-                          <button ng-if="correct_answer" ng-click="nextQuestion()" type="button" class="animated zoomIn waves-effect waves-light btn">Next</button>
+                          <button ng-if="correct_answer" ng-click="nextQuestion()" type="button" class="animated zoomIn waves-effect waves-light btn">Дальше</button>
                         </div>
                     </div>
                 </div>
-                <button ng-if="!correct_answer" ng-click="showSolution()" class="waves-effect waves-light btn right"><span ng-if="!showSolutionFlag">Show Solution</span> <span ng-if="showSolutionFlag">Hide Solution</span></button>
+                <button ng-if="!correct_answer" ng-click="showSolution()" class="waves-effect waves-light btn right"><span ng-if="!showSolutionFlag">Смотреть решение</span> <span ng-if="showSolutionFlag">Спрятать решение</span></button>
 
                 <div >
                     <box box-item="jsonData"></box>
@@ -55,7 +55,7 @@
 - apple
 - mango
           </div>
-            <button ng-if="!correct_answer" ng-click="resetAnswer()" type="button" class="waves-effect waves-light btn red">Reset Answer</button>
+            <button ng-if="!correct_answer" ng-click="resetAnswer()" type="button" class="waves-effect waves-light btn red">Сбросить ответ</button>
 
 
         </div>
